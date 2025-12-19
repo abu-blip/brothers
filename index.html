@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary meta -->
+  <title>BROTHERS AMSTETTEN</title>
+  <meta name="title" content="BROTHERS AMSTETTEN" />
+  <meta name="description" content="Restaurant / Grill / Bar – Landingpage Template mit Platzhalter-Bildern" />
+
+  <!-- favicon (optional) -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+  <!-- Google fonts (wie Grilli) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet" />
+
+  <!-- Grilli CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Placeholder: ein universelles SVG für alle Bilder -->
+  <script>
+    // Kleiner Helfer: liefert eine data-URI für ein SVG Placeholder
+    window.PLACEHOLDER = function (label, w = 1400, h = 900) {
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}">
+          <rect width="100%" height="100%" fill="#cfcfcf"/>
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+                fill="#666" font-family="Arial, sans-serif" font-size="36">
+            ${label}
+          </text>
+        </svg>`;
+      return "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg);
+    };
+  </script>
+
+  <!-- Optional: Mini-Overrides für Logo-Text -->
+  <style>
+    .logo-text {
+      font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold-crayola);
+      font-size: 1.1rem;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .logo-text small {
+      display: block;
+      font-weight: 400;
+      letter-spacing: 0.24em;
+      opacity: 0.9;
+      margin-top: 6px;
+      font-size: 0.72rem;
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- PRELOADER -->
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">BROTHERS</p>
+  </div>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">
+          Platzhalterstraße 1, 3300 Amstetten
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">Täglich: 11:00 – 23:00</span>
+      </div>
+
+      <a href="tel:+43000000000" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">+43 000 000 000</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:hello@brothers-amstetten.at" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">hello@brothers-amstetten.at</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#home" class="logo" aria-label="BROTHERS AMSTETTEN">
+        <div class="logo-text">
+          BROTHERS AMSTETTEN
+          <small>MEDDITERAN • BAR • FOOD</small>
+        </div>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="Menü schließen" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#home" class="logo">
+          <div class="logo-text">
+            BROTHERS AMSTETTEN
+            <small>BURGER • BAR • FOOD</small>
+          </div>
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Menü</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Über uns</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#gallery" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Galerie</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Kontakt</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Besuch uns</p>
+
+          <address class="body-4">
+            Platzhalterstraße 1, <br />
+            3300 Amstetten
+          </address>
+
+          <p class="body-4 navbar-text">Öffnungszeiten: 11:00 – 23:00</p>
+
+          <a href="mailto:hello@brothers-amstetten.at" class="body-4 sidebar-link">hello@brothers-amstetten.at</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Reservierung</p>
+
+          <a href="tel:+43000000000" class="body-1 contact-number hover-underline">
+            +43 000 000 000
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="#reservation" class="btn btn-secondary">
+        <span class="text text-1">Tisch anfragen</span>
+        <span class="text text-2" aria-hidden="true">Tisch anfragen</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="Menü öffnen" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- HERO -->
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+            <div class="slider-bg">
+              <img id="hero1" alt="Hero Platzhalter 1" class="img-cover" />
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Grill • Bar • Küche</p>
+            <h1 class="display-1 hero-title slider-reveal">
+              Geschmack.<br />Atmosphäre.<br />Brothers.
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Hier kommt später euer kurzer Claim / USP rein.
+            </p>
+
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Menü ansehen</span>
+              <span class="text text-2" aria-hidden="true">Menü ansehen</span>
+            </a>
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+            <div class="slider-bg">
+              <img id="hero2" alt="Hero Platzhalter 2" class="img-cover" />
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Handwerk & Qualität</p>
+            <h1 class="display-1 hero-title slider-reveal">
+              Premium Cuts,<br />perfekt gekocht.
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Platzhalter-Text für eure Story / Zutaten / Kochen & Lieben.
+            </p>
+
+            <a href="#reservation" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Reservieren</span>
+              <span class="text text-2" aria-hidden="true">Reservieren</span>
+            </a>
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+            <div class="slider-bg">
+              <img id="hero3" alt="Hero Platzhalter 3" class="img-cover" />
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Events & Specials</p>
+            <h1 class="display-1 hero-title slider-reveal">
+              Abende,<br />die bleiben.
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Platzhalter für Events, Live-Musik, Tasting Nights etc.
+            </p>
+
+            <a href="#gallery" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Impressionen</span>
+              <span class="text text-2" aria-hidden="true">Impressionen</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="Vorheriger Slide" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="Nächster Slide" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#reservation" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon" />
+          <span class="label-2 text-center span">Reservieren</span>
+        </a>
+
+      </section>
+
+      <!-- SERVICE / KACHELN -->
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Was euch erwartet</p>
+          <h2 class="headline-1 section-title">Unsere Highlights</h2>
+          <p class="section-text">
+            Kurzer Platzhalter-Text: Konzept, Küche, Atmosphäre.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#menu" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img id="svc1" class="img-cover" alt="Placeholder: Speisen" />
+                  </figure>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="title-4 card-title">
+                    <a href="#menu">Signature Dishes</a>
+                  </h3>
+                  <a href="#menu" class="btn-text hover-underline label-2">Mehr</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#gallery" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img id="svc2" class="img-cover" alt="Placeholder: Drinks" />
+                  </figure>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="title-4 card-title">
+                    <a href="#gallery">Bar & Cocktails</a>
+                  </h3>
+                  <a href="#gallery" class="btn-text hover-underline label-2">Mehr</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#reservation" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img id="svc3" class="img-cover" alt="Placeholder: Atmosphäre" />
+                  </figure>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="title-4 card-title">
+                    <a href="#reservation">Ambiente</a>
+                  </h3>
+                  <a href="#reservation" class="btn-text hover-underline label-2">Mehr</a>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="" class="shape shape-1 move-anim" />
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="" class="shape shape-2 move-anim" />
+
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section about text-center" aria-label="about" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Über uns</p>
+            <h2 class="headline-1 section-title">Brothers. Fire. Food.</h2>
+
+            <p class="section-text">
+              Platzhalter-Text: eure Geschichte, warum “Brothers”, Konzept, Zutaten, Grillkultur.
+            </p>
+
+            <div class="contact-label">Reservierung</div>
+            <a href="tel:+43000000000" class="body-1 contact-number hover-underline">
+              +43 000 000 000
+            </a>
+
+            <a href="#reservation" class="btn btn-primary">
+              <span class="text text-1">Tisch anfragen</span>
+              <span class="text text-2" aria-hidden="true">Tisch anfragen</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img id="aboutMain" class="w-100" alt="Placeholder: About Banner" />
+
+            <div class="abs-img has-before">
+              <img id="aboutAbs" width="285" height="285" loading="lazy" alt="Placeholder: Detail" class="w-100" />
+            </div>
+
+            <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="" />
+            </div>
+
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape" />
+
+        </div>
+      </section>
+
+      <!-- MENU (mit Platzhalterbildern) -->
+      <section class="section menu" aria-label="menu" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Speisekarte</p>
+          <h2 class="headline-1 section-title text-center">Unsere Klassiker</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img id="m1" class="img-cover" alt="Placeholder: Dish 1" />
+                </figure>
+
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Platzhalter Dish 01</a>
+                    </h3>
+                    <span class="badge label-1">Neu</span>
+                    <span class="span title-2">€ --</span>
+                  </div>
+                  <p class="card-text label-1">
+                    Kurzbeschreibung (Zutaten / Style) – kommt später.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img id="m2" class="img-cover" alt="Placeholder: Dish 2" />
+                </figure>
+
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Platzhalter Dish 02</a>
+                    </h3>
+                    <span class="span title-2">€ --</span>
+                  </div>
+                  <p class="card-text label-1">Kurzbeschreibung – kommt später.</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img id="m3" class="img-cover" alt="Placeholder: Dish 3" />
+                </figure>
+
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Platzhalter Dish 03</a>
+                    </h3>
+                    <span class="span title-2">€ --</span>
+                  </div>
+                  <p class="card-text label-1">Kurzbeschreibung – kommt später.</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img id="m4" class="img-cover" alt="Placeholder: Dish 4" />
+                </figure>
+
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Platzhalter Dish 04</a>
+                    </h3>
+                    <span class="badge label-1">Bestseller</span>
+                    <span class="span title-2">€ --</span>
+                  </div>
+                  <p class="card-text label-1">Kurzbeschreibung – kommt später.</p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="menu-text text-center">
+            <span class="span">Täglich</span>
+            <span class="span">11:00 – 23:00</span>
+          </p>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">Vollständiges Menü</span>
+            <span class="text text-2" aria-hidden="true">Vollständiges Menü</span>
+          </a>
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="" class="shape shape-2 move-anim" />
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="" class="shape shape-3 move-anim" />
+
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="section event bg-black-10" aria-label="gallery" id="gallery">
+        <div class="container">
+
+          <p class="section-subtitle label-2 text-center">Galerie</p>
+          <h2 class="headline-1 section-title text-center">Impressionen</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img id="g1" class="img-cover" alt="Placeholder: Gallery 1" />
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Platzhalter</p>
+                  <h3 class="card-title title-2 text-center">Bildtitel 01</h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img id="g2" class="img-cover" alt="Placeholder: Gallery 2" />
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Platzhalter</p>
+                  <h3 class="card-title title-2 text-center">Bildtitel 02</h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img id="g3" class="img-cover" alt="Placeholder: Gallery 3" />
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Platzhalter</p>
+                  <h3 class="card-title title-2 text-center">Bildtitel 03</h3>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- RESERVATION -->
+      <section class="reservation" id="reservation">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form action="#" class="form-left">
+              <h2 class="headline-1 text-center">Reservierung</h2>
+              <p class="form-text text-center">
+                Anfrage per Telefon: <a href="tel:+43000000000" class="link">+43 000 000 000</a>
+                oder Formular (Platzhalter).
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Name" autocomplete="name" class="input-field" />
+                <input type="tel" name="phone" placeholder="Telefon" autocomplete="tel" class="input-field" />
+              </div>
+
+              <div class="input-wrapper">
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                  <select name="person" class="input-field">
+                    <option value="2-person">2 Personen</option>
+                    <option value="3-person">3 Personen</option>
+                    <option value="4-person">4 Personen</option>
+                    <option value="5-person">5 Personen</option>
+                    <option value="6-person">6 Personen</option>
+                    <option value="7-person">7 Personen</option>
+                    <option value="8-person">8 Personen</option>
+                  </select>
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+                  <input type="date" name="reservation-date" class="input-field" />
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                  <select name="time" class="input-field">
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                  </select>
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+              </div>
+
+              <textarea name="message" placeholder="Nachricht (optional)" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Anfrage senden</span>
+                <span class="text text-2" aria-hidden="true">Anfrage senden</span>
+              </button>
+            </form>
+
+            <div class="form-right text-center" id="contact">
+              <h2 class="headline-1 text-center">Kontakt</h2>
+
+              <p class="contact-label">Telefon</p>
+              <a href="tel:+43000000000" class="body-1 contact-number hover-underline">
+                +43 000 000 000
+              </a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Adresse</p>
+              <address class="body-4">
+                Platzhalterstraße 1,<br />
+                3300 Amstetten
+              </address>
+
+              <p class="contact-label">Öffnungszeiten</p>
+              <p class="body-4">
+                Mo–So<br />
+                11:00 – 23:00
+              </p>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">E-Mail</p>
+              <a href="mailto:abufabu@gmail.com" class="body-4 hover-underline">
+                hello@brothers-amstetten.at
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer section has-bg-image text-center"
+          style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#home" class="logo">
+            <div class="logo-text" style="justify-content:center; text-align:center;">
+              BROTHERS AMSTETTEN
+              <small>GRILL • BAR • FOOD</small>
+            </div>
+          </a>
+
+          <address class="body-4">
+            Platzhalterstraße 1, 3300 Amstetten
+          </address>
+
+          <a href="mailto:hello@brothers-amstetten.at" class="body-4 contact-link">hello@brothers-amstetten.at</a>
+          <a href="tel:+43000000000" class="body-4 contact-link">+43 000 000 000</a>
+
+          <p class="body-4">
+            Öffnungszeiten: 11:00 – 23:00
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Newsletter (Platzhalter)</p>
+
+          <p class="label-1">
+            Trage deine E-Mail ein, um Updates zu bekommen.
+          </p>
+
+          <form action="#" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+              <input type="email" name="email_address" placeholder="E-Mail" autocomplete="email" class="input-field" />
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Abonnieren</span>
+              <span class="text text-2" aria-hidden="true">Abonnieren</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+          <li><a href="#home" class="label-2 footer-link hover-underline">Home</a></li>
+          <li><a href="#menu" class="label-2 footer-link hover-underline">Menü</a></li>
+          <li><a href="#about" class="label-2 footer-link hover-underline">Über uns</a></li>
+          <li><a href="#gallery" class="label-2 footer-link hover-underline">Galerie</a></li>
+          <li><a href="#contact" class="label-2 footer-link hover-underline">Kontakt</a></li>
+        </ul>
+
+        <ul class="footer-list">
+          <li><a href="#" class="label-2 footer-link hover-underline">Instagram</a></li>
+          <li><a href="#" class="label-2 footer-link hover-underline">Facebook</a></li>
+          <li><a href="#" class="label-2 footer-link hover-underline">Google</a></li>
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          © <span id="year"></span> BROTHERS AMSTETTEN. Alle Rechte vorbehalten.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <a href="#top" class="back-top-btn active" aria-label="Nach oben" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- SCRIPT -->
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Platzhalter-Bilder initialisieren -->
+  <script>
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Hero
+    document.getElementById("hero1").src = PLACEHOLDER("HERO 01", 1920, 1080);
+    document.getElementById("hero2").src = PLACEHOLDER("HERO 02", 1920, 1080);
+    document.getElementById("hero3").src = PLACEHOLDER("HERO 03", 1920, 1080);
+
+    // Services
+    document.getElementById("svc1").src = PLACEHOLDER("SERVICE 01", 900, 1060);
+    document.getElementById("svc2").src = PLACEHOLDER("SERVICE 02", 900, 1060);
+    document.getElementById("svc3").src = PLACEHOLDER("SERVICE 03", 900, 1060);
+
+    // About
+    document.getElementById("aboutMain").src = PLACEHOLDER("ABOUT MAIN", 1200, 900);
+    document.getElementById("aboutAbs").src  = PLACEHOLDER("ABOUT DETAIL", 600, 600);
+
+    // Menu thumbs
+    document.getElementById("m1").src = PLACEHOLDER("MENU 01", 600, 600);
+    document.getElementById("m2").src = PLACEHOLDER("MENU 02", 600, 600);
+    document.getElementById("m3").src = PLACEHOLDER("MENU 03", 600, 600);
+    document.getElementById("m4").src = PLACEHOLDER("MENU 04", 600, 600);
+
+    // Gallery
+    document.getElementById("g1").src = PLACEHOLDER("GALLERY 01", 900, 1200);
+    document.getElementById("g2").src = PLACEHOLDER("GALLERY 02", 900, 1200);
+    document.getElementById("g3").src = PLACEHOLDER("GALLERY 03", 900, 1200);
+  </script>
+
+</body>
+</html>
